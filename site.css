@@ -1,0 +1,55 @@
+body {
+	margin: 0px;
+	background-color: #161616;
+}
+
+#content {
+	width: 760px;
+	margin: 0px auto 0px auto;
+	padding: 0px 20px 20px 20px; 
+	height: 101%;
+	background: url("noise.png");
+	background-color: #F8F8F8;
+	color: #222;
+	border-color: #222;
+	border-style: solid;
+	border-width: 1px;
+	border-top-width: 0px;
+}
+
+#nav {
+	float: right;
+	left: 120px;
+	margin-left: -120px;
+	position: relative;
+	width: 120px;
+}
+
+div#nav h1 {
+	color: grey;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0px 0px 0px 20px;
+	padding: 12px 20px 6px 20px;
+}
+
+div#nav a {
+	color: #555;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 20px;
+	padding: 4px 20px 4px 20px;
+	text-decoration: none;
+	width: 120px;
+}
+
+#footer {
+	font-size: 12px;
+	height: 100px;
+	margin: 0px auto 0px auto;
+	padding: 20px 40px 20px 40px;
+	text-align: center;
+	width: 660px;
+	color: grey;	
+}
