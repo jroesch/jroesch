@@ -1,7 +1,7 @@
 #!/bin/bash
-ghc main.hs -o haykll
-./haykll clean
-./haykll build
+ghc main.hs -o hakyll
+./hakyll clean
+./hakyll build
 cp -r ./_site/* ./../jroesch.github.com
 cd jroesch.github.com
 git add *
