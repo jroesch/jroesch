@@ -24,3 +24,6 @@ Thumbs.db
 *.log
 *.sql
 *.sqlite
+
+_cache/*
+_site/*
