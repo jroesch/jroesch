@@ -67,7 +67,7 @@ div#nav > a:hover {
 	background: url("/images/noise.png"), -webkit-linear-gradient(#E0E0E0, #CCC, #B0B0B0);
 	border-top: 1px solid #F2F2F2;
 	border-bottom: 1px solid #8C8C8C;
-	padding-top: .35em;
+	padding-top: 10px;
 	padding-bottom: .35em;
 	margin-left: -20px;
 	font-size: 24px;
@@ -102,6 +102,7 @@ footer {
 
 footer > a {
 	color: #888;
+	padding-bottom: 50px;
 }
 
 #post-list {
