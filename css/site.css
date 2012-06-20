@@ -2,7 +2,9 @@ body {
 	margin: 0px;
 	background-color: #252525;
 	color: #222;
-	font-family: Monaco;
+	font-family: 'Lucida Sans', 'Helvetica', 'Arial', sans-serif;
+	font-size: 14px;
+	height: 101%
 	/* background-image: url("/images/texture.jpeg"); */
 	/* font-family: Helvetica, arial, freesans, clean, sans-serif; */
 }
@@ -10,8 +12,7 @@ body {
 #content {
 	width: 860px;
 	margin: 0px auto 0px auto;
-	padding: 0px 20px 20px 20px; 
-	height: 101%;
+	padding: 0px 20px 0px 20px; 
 	background: url("/images/noise.png");
 	background-color: #F8F8F8;
 	color: #222;
@@ -55,7 +56,7 @@ div#nav > a:hover {
 #column {
 	padding: 20px;
 	padding-top: 5px;
-	padding-bottom: 0px;
+	padding-bottom: 50px;
 }
 
 #title {
@@ -96,7 +97,6 @@ footer {
 	margin-bottom: 3em;
 	border-bottom-right-radius: 0.4em;
 	border-bottom-left-radius: 0.4em;
-	z-index: 1;
 	background: url('/images/noise.png?1338482978'),-webkit-linear-gradient(#E0E0E0, #CCC, #B0B0B0);
 }
 
@@ -120,6 +120,17 @@ footer > a {
 
 .post {}
 
+#about-me {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+#img-me {
+	width: 150px;
+	height: 150px;
+	float: left;
+	padding-right: 10px;
+}
 #social-buttons {
 	height: 32px;
 }
@@ -128,6 +139,7 @@ footer > a {
 	float: left;
 	width: 32px;
 	height: 32px;
+	margin-right: 10px;
 }
 
 #twitter.social-button {
