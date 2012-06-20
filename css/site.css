@@ -2,12 +2,13 @@ body {
 	margin: 0px;
 	background-color: #252525;
 	color: #222;
+	font-family: Monaco;
 	/* background-image: url("/images/texture.jpeg"); */
 	/* font-family: Helvetica, arial, freesans, clean, sans-serif; */
 }
 
 #content {
-	width: 760px;
+	width: 860px;
 	margin: 0px auto 0px auto;
 	padding: 0px 20px 20px 20px; 
 	height: 101%;
@@ -36,7 +37,7 @@ div#nav h1 {
 	padding: 12px 20px 6px 20px;
 }
 
-div#nav a {
+div#nav > a {
 	display: block;
 	font-size: 14px;
 	font-weight: bold;
@@ -44,14 +45,21 @@ div#nav a {
 	padding: 4px 20px 4px 20px;
 	text-decoration: none;
 	width: 120px;
+	color: #BBB;
+}
+
+div#nav > a:hover {
+	color: white;
 }
 
 #column {
+	padding: 20px;
 	padding-top: 5px;
+	padding-bottom: 0px;
 }
 
 #title {
-	width: 760px;
+	width: 860px;
 	margin: 0px auto 0px auto;
 	padding: 0px 20px 0px 20px; 
 	position: relative;
@@ -68,13 +76,14 @@ div#nav a {
 }
 
 #title > a {
-	padding-left: 175px;
+	font-family: Courier New;
+	padding-left: 155px;
 	color: #6B6B6B;
 	text-decoration: none;
 }
 
 footer {
-	width: 760px;
+	width: 860px;
 	margin: 0px auto 0px auto;
 	padding: 0px 20px 20px 20px; 
 	font-size: 14px;
@@ -96,9 +105,52 @@ footer > a {
 }
 
 #post-list {
-	border: 1px solid red;
 }
 
-#post-item {
-	border: 1px solid blue;
+.post-item {
 }
+
+.post-item > a {
+	font-size: 20px;
+}
+
+.post-descrip {
+	
+}
+
+.post {}
+
+#social-buttons {
+	height: 32px;
+}
+
+.social-button {
+	float: left;
+	width: 32px;
+	height: 32px;
+}
+
+#twitter.social-button {
+	background-image: url("/images/twitter_dark.png");
+}
+
+#twitter.social-button:hover {
+	background-image:url("/images/twitter_active.png")
+}
+
+#facebook.social-button {
+	background-image: url("/images/facebook_dark.png");
+}
+
+#facebook.social-button:hover {
+	background-image:url("/images/facebook_active.png")
+}
+
+#google.social-button {
+	background-image: url("/images/google_dark.png");
+}
+
+#google.social-button:hover {
+	background-image:url("/images/google_active.png")
+}
+

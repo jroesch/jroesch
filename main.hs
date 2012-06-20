@@ -18,11 +18,13 @@ main = hakyll $ do
         
     match "templates/*" $ compile templateCompiler
     
-    match "index.md" $ do
-        route   $ setExtension "html"
-        compile $ pageCompiler
+    match "index.html" $ do
+        route idRoute
+        compile $ readPageCompiler
+            >>> arr applySelf
             >>> applyTemplateCompiler "templates/default.html"
-            
+            >>> relativizeUrlsCompiler
+
     match "posts/*" $ do
         route   $ setExtension ".html"
         compile $ pageCompiler
@@ -37,7 +39,12 @@ main = hakyll $ do
         >>> applyTemplateCompiler "templates/postList.html"
         >>> applyTemplateCompiler "templates/default.html"
         >>> relativizeUrlsCompiler
-        
+    
+    match "404.html" $ do
+        route idRoute
+        compile $ pageCompiler
+            >>> applyTemplateCompiler "templates/default.html"
+  
 addPostList :: Compiler (Page String, [Page String]) (Page String)
 addPostList = setFieldA "posts" $
     arr (reverse . sortByBaseName)
