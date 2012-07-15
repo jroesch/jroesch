@@ -18,7 +18,15 @@ main = hakyll $ do
         
     match "templates/*" $ compile templateCompiler
     
+    -- Move homepage to blog listing vs. about me?
     match "index.html" $ do
+        route idRoute
+        compile $ readPageCompiler
+            >>> arr applySelf
+            >>> applyTemplateCompiler "templates/default.html"
+            >>> relativizeUrlsCompiler
+            
+    match "resume.html" $ do
         route idRoute
         compile $ readPageCompiler
             >>> arr applySelf
