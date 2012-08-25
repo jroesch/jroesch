@@ -5,7 +5,6 @@ date: June 19, 2012
 description: An opening post on my *finally* finished site.
 ---
 
-#Hello, World!
 Finally after saying I would finish my website forever and ever, I finally have. This is just a welcome post saying this
 thing is running, and letting my friends who have been giving me a hard time(ahem, Andrew). That I did in fact get my
 site working when summer started. Its very much a work in progress this is my first few days effort. I'll be hacking 
