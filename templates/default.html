@@ -2,6 +2,8 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="/css/syntax.css">
 		<link rel="stylesheet" type="text/css" href="/css/site.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
 		<!-- Google Analytics -->
 		<script type="text/javascript">
 		
@@ -18,35 +20,31 @@
 		</script>
 	</head>
 	<body>
-		<div id="container">
-			<div id="content">
-				<div id="nav">
-					<h1>jroesch</h1>
-						<a href="/">About</a>
-						<a href="/posts.html">Blog</a>
-						<a href="/resume.html">Resume</a>
-					<!-- TODO find better way to link to profiles -->
-					<h1>Profiles</h1>
-						<a href="http://github.com/jroesch">GitHub</a>
-						<a href="http://twitter.com/#!/roeschinc">Twitter</a>
-						<a href="http://www.linkedin.com/profile/view?id=148343860&locale=en_US&trk=tab_pro">LinkedIn</a>
-					<h1>Friends and Favorites</h1>
-						<a href="http://andrewberls.com">Andrew</a>
-						<a href="http://cs.ucsb.edu/~adelbert_chang/">Allen</a>
-						<a href="http://blog.fogus.me">Fogus</a>
-						<a href="http://haskell.org">Haskell</a>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div id="left" class="span2">
+					<div id="me">
+						<a id="img-me"></a>
+						<h1>jroesch</h1>
+					</div>
 				</div>
-				<div id="title">
-					<a href="/">blog :: [Thoughts] -> [Code] -> [Words] </a>
-				</div>
-				<div id="column">
-					$body$
+				<div class="span10 content">
+					<div class="header">
+						<div id="title">
+							<!-- <h1>jroesch :: [Code] -> [Thoughts] -> [Words]</h1> -->
+						</div>
+						<div id="search">
+							<input type="text" class="search-query" placeholder="Search">
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div id="center" class="span10">
+							$body$
+						</div>
+					</div>
+					<div class="footer"></div>
 				</div>
 			</div>
-			<footer>
-				Copyright 2012 - Jared Roesch - Powered by <a href="http://jaspervdj.be/hakyll/">Hakyll</a> and
-				<a href="http://github.com">GitHub</a>.
-			</footer>
 		</div>
 	</body>
 </html>
