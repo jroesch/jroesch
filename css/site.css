@@ -1,169 +1,79 @@
 body {
-	margin: 0px;
-	background-color: #252525;
-	color: #222;
-	font-family: 'PT Serif', Georgia, Times, 'Times New Roman', serif;
-	font-size: 16px;
-	height: 101%
-	/* background-image: url("/images/texture.jpeg"); */
-	/* font-family: Helvetica, arial, freesans, clean, sans-serif; */
-}
+  margin: 0px;
+  background-color: white;
+  /* font-family: 'PT Serif', Georgia, Times, 'Times New Roman', serif; */
 
-#content {
-	width: 860px;
-	margin: 0px auto 0px auto;
-	padding: 0px 20px 0px 20px; 
-	background: url("/images/noise.png");
-	background-color: #F8F8F8;
-	color: #222;
-	border-bottom: solid 1px rgba(0, 0, 0, .1);
-	box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+  font-family: freight-sans-pro, 'Myriad Pro', Myriad, sans-serif;
+  font-size: 17px;
+  height: 33.11666488647461px;
+  line-height: 27.58333396911621px;
+  height: 101%;
 }
-
-#nav {
-	font-family: Courier New;
-	color: #BBB;
-	float: right;
-	left: 120px;
-	margin-left: -120px;
-	position: relative;
-	width: 120px;
-}
-
-div#nav h1 {
-	color: #CECECE;
-	font-size: 18px;
-	font-weight: bold;
-	margin: 0px 0px 0px 20px;
-	padding: 12px 20px 6px 20px;
-}
-
-div#nav > a {
-	display: block;
-	font-size: 14px;
-	font-weight: bold;
-	margin-left: 20px;
-	padding: 4px 20px 4px 20px;
-	text-decoration: none;
-	width: 120px;
-	color: #BBB;
-}
-
-div#nav > a:hover {
-	color: white;
-}
-
-#column {
-	padding: 20px;
-	padding-top: 5px;
-	padding-bottom: 50px;
-}
-
 #title {
-	width: 860px;
-	margin: 0px auto 0px auto;
+  /* margin: 0px auto 0px auto;
 	padding: 0px 20px 0px 20px; 
-	position: relative;
-	background: url("/images/noise.png"), -webkit-linear-gradient(#E0E0E0, #CCC, #B0B0B0);
-	border-top: 1px solid #F2F2F2;
+	position: relative; */
+
+  background: url("/images/noise.png"), -webkit-linear-gradient(#e0e0e0, #cccccc, #b0b0b0);
+  /* border-top: 1px solid #F2F2F2;
 	border-bottom: 1px solid #8C8C8C;
 	padding-top: 10px;
 	padding-bottom: .35em;
 	margin-left: -20px;
 	font-size: 24px;
-	color: #6B6B6B;
-	text-decoration: none;
-	text-shadow: #EBEBEB 0px 1px 0px;
+	color: #6B6B6B; */
+  text-shadow: #EBEBEB 0px 1px 0px;
 }
-
-#title > a {
-	font-family: Courier New;
-	padding-left: 155px;
-	color: #6B6B6B;
-	text-decoration: none;
+.title-link {
+  font-family: Courier New;
+  font-size: 24px;
+  padding-left: 155px;
+  color: #6B6B6B;
+  text-decoration: none;
 }
-
-footer {
-	width: 860px;
-	margin: 0px auto 0px auto;
-	padding: 0px 20px 20px 20px; 
-	font-size: 14px;
-	color: #888;
-	text-shadow: #D9D9D9 0 1px;
-	border-top: 1px solid #F2F2F2;
-	position: relative;
-	padding-top: 1em;
-	padding-bottom: 1em;
-	margin-bottom: 3em;
-	border-bottom-right-radius: 0.4em;
-	border-bottom-left-radius: 0.4em;
-	background: url('/images/noise.png?1338482978'),-webkit-linear-gradient(#E0E0E0, #CCC, #B0B0B0);
+.title-link:hover {
+  text-decoration: none;
 }
-
-footer > a {
-	color: #888;
-	padding-bottom: 50px;
+.greyOutline {
+  border-color: #E3E3E3;
+  border-style: solid;
+  border-width: 0px;
 }
-
-#post-list {
+.header {
+  border-color: #E3E3E3;
+  border-style: solid;
+  border-width: 0px;
+  margin-left: -50px;
+  border-bottom-width: 1px;
+  height: 99px;
+  width: 101%;
 }
-
-.post-item {
+.content {
+  border-color: #E3E3E3;
+  border-style: solid;
+  border-width: 0px;
+  padding-left: 50px;
+  border-left-width: 1px;
+  height: 100%;
 }
-
+#nav > h1 {
+  font-size: 20px;
+}
 .post-item > a {
-	font-size: 20px;
+  font-size: 20px;
 }
-
-.post-descrip {
-	
-}
-
-.post {}
-
 #about-me {
-	padding-right: 0px;
-	padding-left: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
-
 #img-me {
-	width: 150px;
-	height: 150px;
-	float: left;
-	padding-right: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 100pc;
+  float: left;
+  margin-right: 25px;
 }
-#social-buttons {
-	height: 32px;
+footer {
+  padding: 0px auto 0px auto;
+  padding-top: 25px;
 }
-
-.social-button {
-	float: left;
-	width: 32px;
-	height: 32px;
-	margin-right: 10px;
-}
-
-#twitter.social-button {
-	background-image: url("/images/twitter_dark.png");
-}
-
-#twitter.social-button:hover {
-	background-image:url("/images/twitter_active.png")
-}
-
-#facebook.social-button {
-	background-image: url("/images/facebook_dark.png");
-}
-
-#facebook.social-button:hover {
-	background-image:url("/images/facebook_active.png")
-}
-
-#google.social-button {
-	background-image: url("/images/google_dark.png");
-}
-
-#google.social-button:hover {
-	background-image:url("/images/google_active.png")
-}
-
